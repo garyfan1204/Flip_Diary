@@ -1,0 +1,5 @@
+@media screen and (max-width:845px) {
+    .bar:last-of-type{
+        margin-bottom: 20%;
+    }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/layout.js" defer></script>
+    <title>變更密碼</title>
+</head>
+<body>
+    <form id="changepwd">
+        <div id="username">User</div>
+        <div id="originpwd">原密碼<input name="originpwd" id="originpwd_input"></div>
+        <div id="newpwd">新密碼<input name="newpwd" id="newpwd_input"></div>
+        <div id="confirmpwd">確認密碼<input name="confirmpwd" id="confirmpwd_input"></div>
+        <div>
+            <input type="reset" value="返回" onclick="resetlink('changepwd')">
+            <input type="button" id="checkpwd" value="儲存" onclick="changepwd()">
+        </div>
+    </form>
+</body>
+</html>

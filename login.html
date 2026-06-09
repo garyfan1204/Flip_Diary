@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/layout.js" defer></script>
+    <script src="javascript/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>登入?註冊?</title>
+</head>
+
+<body>
+    <form action="" id="loginform" class="loginform">
+        <p id="logintitle">Login</p>
+        <input type="text" name="account" placeholder="帳號" required>
+        <input type="password" name="password" id="registerpassword" placeholder="密碼" required>
+        <input type="submit" value="登入">
+        <p id="loginmsg"></p>
+        <p id="goregister">新用戶?<a href="" id="registerlink">前往註冊</a></p>
+        <p id="forgotpwd"><a href="#">忘記密碼</a></p>
+    </form>
+    <dialog id="infoModalforgot">
+        <h3>請輸入帳號</h3><input type="text" id="accountForgot"><br>
+        <button id="okForgot">確定</button>
+        <button id="closeForgot">取消</button>
+    </dialog>
+    <dialog id="infoModal">
+        <h3>驗證碼</h3>
+        <input type="text" id="content"><br>
+        <button id="ok">確認</button>
+        <button id="close">關閉</button>
+    </dialog>
+    <form action="" id="registerform" class="registerform" onsubmit="return validateRegister()">
+        <p id="registertitle">Register</p>
+        <input type="text" name="account" id="acc" class="acc" placeholder="帳號" required>
+        <input type="text" name="name" class="myname" placeholder="姓名" required>
+        <input type="email" name="email" id="email" class="email" placeholder="電子信箱" required>
+        <input type="password" name="password" id="passwd" class="pwd" placeholder="密碼" required>
+        <input type="password" name="checkpwd" id="confirmpwd" class="checkpwd" placeholder="確認密碼" required>
+        <input class='prompttest' type="submit" value="註冊">
+        <p id="gologin">已有帳戶?<a href="" id="loginlink">點此登入</a></p>
+        <dialog id="showAuthCode">
+            <p><a href="#" class="showAuthCode">註冊成功後點此輸入驗證碼</a></p>
+        </dialog>
+    </form>
+</body>
+
+</html>

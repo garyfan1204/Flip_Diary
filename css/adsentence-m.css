@@ -1,0 +1,48 @@
+@media screen and (min-width: 846px) {
+    .sort,#items{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    #content{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    #add,#total{
+        font-size: 20px;
+    }
+
+    #total :last-of-type{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .sort{
+        margin: 10px 0;
+    }
+
+    .type {
+        width: 30%;
+    }
+    
+    .content {
+        width: 70%;
+    }
+
+    #items tr{
+        height: 65px;
+    }
+
+    .btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}

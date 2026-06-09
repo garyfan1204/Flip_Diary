@@ -1,0 +1,52 @@
+@media screen and (min-width: 846px) {
+    #content :not(.page,input){
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    main{
+        height: auto;
+    }
+    
+    #content{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .sort+div{
+        width: calc(85% - 20px);
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 845px) and (min-width: 471px) {
+    #wrap{
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .singer,.song{
+        width: 25%;
+    }
+
+    .address{
+        width: 50%;
+        justify-content: start;
+    }
+
+    .sort .address{
+        width: 35%;
+    }
+
+    .btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}

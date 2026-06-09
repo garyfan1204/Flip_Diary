@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/adlayout.js"></script>
+    <title>心情小站</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="emotion">
+            <div class="title">
+                <div></div>
+                <h1>表情</h1>
+            </div>
+            <div id="content">
+                <div class="newFace">新增表情</div>
+                <dialog id="infoModal">
+                    <h3>新增表情</h3>
+                    <label>圖示</label><input type="file"><br>
+                    <label>名稱</label><input type="text"><br>
+                    <button id="okFace">ok</button>
+                    <button id="closeFace">close</button>
+                </dialog>
+                <div id="search">
+                    <input type="search" id="searchDataFace">
+                    <a href="#" id="searchBtnFace"><img src="image/search.png" alt="Search"></a>
+                </div>
+                <div id="sort">
+                    <!-- <div class="num">編號</div> -->
+                    <div class="icon">圖示</div>
+                    <div class="name">名稱</div>
+                    <div class="num">操作</div> 
+                </div>
+                <table id="items">
+                    <!-- <tr>
+                        <td class="num">1</td>
+                        <td class="icon"><img src="image/img-emoji/joy.png" alt=""></td>
+                        <td class="name">喜悅</td>
+                    </tr>
+                    <tr>
+                        <td class="num">2</td>
+                        <td class="icon"><img src="image/img-emoji/angry.png" alt=""></td>
+                        <td class="name">生氣</td>
+                    </tr>
+                    <tr>
+                        <td class="num">3</td>
+                        <td class="icon"><img src="image/img-emoji/calm.png" alt=""></td>
+                        <td class="name">平靜</td>
+                    </tr>
+                    <tr>
+                        <td class="num">4</td>
+                        <td class="icon"><img src="image/img-emoji/sad.png" alt=""></td>
+                        <td class="name">傷心</td>
+                    </tr>
+                    <tr>
+                        <td class="num">5</td>
+                        <td class="icon"><img src="image/img-emoji/happiness.png" alt=""></td>
+                        <td class="name">幸福</td>
+                    </tr> -->
+                </table>
+                <table class="pages" id="page-emotion">
+                    <tr>
+                        <td><a href="">&lt;&lt;</a></td>
+                        <td><a href="">4</a></td>
+                        <td><a href="">5</a></td>
+                        <td><a href="">6</a></td>
+                        <td><a href="">7</a></td>
+                        <td><a href="">8</a></td>
+                        <td><a href="">&gt;&gt;</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="weather">
+            <div class="title">
+                <div></div>
+                <h1>天氣</h1>
+            </div>
+            <div id="content">
+                <div class="newWeather">新增天氣</div>
+                <dialog id="infoModalWeather">
+                    <h3>新增天氣</h3>
+                    <label>圖示</label><input type="file"><br>
+                    <label>名稱</label><input type="text"><br>
+                    <button id="okWeather">ok</button>
+                    <button id="closeWeather">close</button>
+                </dialog>
+                <div id="search">
+                    <input type="search" id="searchDataWeather">
+                    <a href="#" id="searchBtnWeather"><img src="image/search.png" alt="Search"></a>
+                </div>
+                <div id="sort">
+                    <!-- <div class="num">編號</div> -->
+                    <div class="icon">圖示</div>
+                    <div class="name">名稱</div>
+                    <div class="num">操作</div> 
+                </div>
+                 <table id="items-Weather">
+                 <!--   <tr>
+                        <td class="num">1</td>
+                        <td class="icon"><img src="image/img-weather/sun.png" alt=""></td>
+                        <td class="name">晴天</td>
+                    </tr>
+                    <tr>
+                        <td class="num">2</td>
+                        <td class="icon"><img src="image/img-weather/rain.png" alt=""></td>
+                        <td class="name">雨天</td>
+                    </tr>
+                    <tr>
+                        <td class="num">3</td> 
+                        <td class="icon"><img src="image/img-weather/cloudy.png" alt=""></td>
+                        <td class="name">陰天</td>
+                    </tr>
+                    <tr>
+                        <td class="num">4</td> 
+                        <td class="icon"><img src="image/img-weather/partly.png" alt=""></td>
+                        <td class="name">晴時多雲</td>
+                    </tr>
+                    <tr>
+                        <td class="num">5</td>
+                        <td class="icon"><img src="image/img-weather/snowy.png" alt=""></td>
+                        <td class="name">下雪</td>
+                    </tr> -->
+                </table>
+                <table class="pages" id="page-weather">
+                    <!-- <tr>
+                        <td><a href="">&lt;&lt;</a></td>
+                        <td><a href="">4</a></td>
+                        <td><a href="">5</a></td>
+                        <td><a href="">6</a></td>
+                        <td><a href="">7</a></td>
+                        <td><a href="">8</a></td>
+                        <td><a href="">&gt;&gt;</a></td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

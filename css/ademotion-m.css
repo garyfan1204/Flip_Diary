@@ -1,0 +1,25 @@
+@media screen and (max-width: 657px) and (min-width: 470px) {
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #wrap{
+        flex-wrap: wrap;
+    }
+    
+    #wrap >*{
+        width: calc(100% - 30px);
+    }
+    
+    #content{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}

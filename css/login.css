@@ -1,0 +1,157 @@
+a[href*="login"] {
+    background-color: #887a69;
+}
+
+.loginform {
+    background-color: #fefbec;
+    width: calc(350px - 90px);
+    height: calc(525px - 90px);
+    padding: 45px;
+    border-radius: 10px;
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    box-shadow: 1px 2.5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.showAuthCode{
+    color: #2a2a2a;
+}
+
+#loginmsg,
+#registermsg {
+    color: red;
+}
+
+form p {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.loginform p a {
+    color: #a99883;
+}
+
+#logintitle {
+    color: #887a69;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.loginform input {
+    margin: 0 5% 25px;
+}
+
+input {
+    color: #878787;
+    font-size: 20px;
+    font-weight: 100;
+    width: calc(90% - 30px);
+    height: 50px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2.5px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'AnyConv.com__Iansui-Regular';
+}
+
+input[type="submit"] {
+    font-size: 24px;
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+}
+#okReset{
+    font-size: 24px;
+    width: 90%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #887a69;
+    margin: 20px 5%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginform input[type="submit"] {
+    color: #fff;
+    background-color: #887a69;
+    margin: 20px 5%;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+#goregister {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+#forgotpwd {
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 20px;
+    border-top: 1px solid #000;
+}
+
+dialog {
+    border: none;
+    box-shadow: 0 2px 6px #ccc;
+    background-color: #fefcec;
+    backdrop-filter: invert(20%);
+    color: #555;
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: invert(20%);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#loginlink:hover {
+    color: #fcf0bb;
+}
+
+#showAuthCode {
+    cursor: pointer;
+}
+
+#infoModal input[type="text"] {
+    color: #2a2a2a;
+    background-color: #fffde3;
+    margin: 5px;
+}
+
+#okForgot,
+#closeForgot,
+#close,
+#ok {
+    color: #ffffff;
+    background-color: #887a69;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 20%;
+}
+
+#showAuthCode:hover {
+    color: #fcf0bb;
+}
+
+#okForgot:hover,
+#closeForgot:hover,
+#close:hover,
+#ok:hover {
+    background-color: #474747;
+}

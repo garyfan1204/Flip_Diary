@@ -1,0 +1,150 @@
+#leftside a[href *="ademotion"] {
+    background-color: #16435f;
+}
+
+#wrap {
+    display: flex;
+}
+
+#wrap >*{
+    width: calc(50% - 30px);
+    height: calc(100% - 30px);
+    padding: 15px;
+}
+
+#content{
+    width: calc(100% - 30px);
+    height: calc(100% - 85px);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#emotion #content{
+    background-color: #a6bbce;
+}
+
+#weather #content{
+    background-color: #c0d8ea;
+}
+
+.newFace,
+.newWeather {
+    background-color: #3a779d;
+    color: #fff;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.newFace:hover,
+.newWeather:hover {
+    background-color: #16435f;
+    cursor: pointer;
+}
+
+#search {
+    width: 100%;
+    position: relative;
+    right: 0;
+}
+
+#sort {
+    background-color: #16435f;
+    color: #fff;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.num,
+.icon {
+    width: 30%;
+    text-align: center;
+}
+
+.name {
+    width: 40%;
+    text-align: center;
+}
+
+#items,
+#items-Weather {
+    width: 100%;
+    height: 60%;
+    border-collapse: collapse;
+}
+
+#items tr,
+#items-Weather tr {
+    height: 20%;
+}
+
+#items td,
+#items-Weather td {
+    border: 1px solid #000;
+}
+
+#items tr:first-of-type td,
+#items-Weather tr:first-of-type td {
+    border-top: none;
+}
+
+#items td:first-of-type,
+#items-Weather td:first-of-type {
+    border-left: none;
+}
+
+#items td:last-of-type,
+#items-Weather td:last-of-type {
+    border-right: none;
+}
+
+#items tr:last-of-type td,
+#items-Weather tr:last-of-type td {
+    border-bottom: none;
+}
+
+#items img,
+#items-Weather img {
+    width: 30px;
+    height: 30px;
+}
+ 
+.btns div{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit,.delete{
+    width: 45%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: #2DBB32;
+}
+
+.delete{
+    background-color: #E47D43;
+}

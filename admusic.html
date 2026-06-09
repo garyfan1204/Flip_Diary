@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/adlayout.js"></script>
+    <title>音樂庫</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="search">
+            <input type="search" id="searchData">
+            <a href="#" id="searchBtn"><img src="image/search.png" alt="Search"></a>
+        </div>
+        <div class="title">
+            <div></div>
+            <h1>音樂庫</h1>
+        </div>
+        <div id="content">
+            <div class="sort">
+                <div class="singer" onclick="sortDivs(0)">歌手</div>
+                <div class="song" onclick="sortDivs(1)">歌名</div>
+                <div class="address" onclick="sortDivs(2)">網址</div>
+            </div>
+            <div></div>
+            <div id="add">新增音樂</div>
+            <dialog id="infoModalMusic">
+                <h3>新增音樂</h3>
+                <label>歌手</label><input type="text" id="singerMusic"><br>
+                <label>歌名</label><input type="text" id="nameMusic"><br>
+                <label>網址</label><input type="text" id="pathMusic"><br>
+                <label>對應表情</label>
+                <select id="emojiMusic">
+                    <option value="平靜">平靜</option>
+                    <option value="害怕">害怕</option>
+                    <option value="失落">失落</option>
+                    <option value="喜悅">喜悅</option>
+                    <option value="幸福">幸福</option>
+                    <option value="生氣">生氣</option>
+                </select><br>
+                <button id="okMusic">ok</button>
+                <button id="closeMusic">close</button>
+            </dialog>
+            <!-- <select name="type" >
+                <option value="all">全部類型</option>
+            </select> -->
+            <div id="container">
+                <!-- <div class="column">
+                    <div class="singer">楊丞林</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="singer">蔡依林</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">unknown</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">unknown</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">林志玲</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">unknown</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">未知</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="singer">未知</div>
+                    <div class="song">歌名</div>
+                    <div class="address">網址</div>
+                    <div class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <table class="pages" id="page-music">
+                <!-- <tr>
+                    <td><a href="">&lt;&lt;</a></td>
+                    <td><a href="">1</a></td>
+                    <td><a href="">2</a></td>
+                    <td><a href="">3</a></td>
+                    <td><a href="">4</a></td>
+                    <td><a href="">5</a></td>
+                    <td><a href="">&gt;&gt;</a></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+#leftside a[href *="adreport"]{
+    background-color: #16435f;
+}
+
+#wrap-down,
+#wrap-up {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    background-color: #fff;
+    width: calc(100% - 80px);
+    height: calc(100% - 120px);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#report{
+    width: calc(50% - 30px);
+    padding: 15px;
+}

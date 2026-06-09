@@ -1,0 +1,27 @@
+@media screen and (min-width: 471px) {
+    #wrap-down,
+    #wrap-up{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #wrap-up,
+    #wrap-down{
+        flex-direction: column;
+    }
+
+    #report{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    #wrap-down #report:last-of-type{
+        margin-bottom: 0;
+    }
+
+    #wrap{
+        margin-bottom: 20%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/layout.js" defer></script>
+    <link rel="stylesheet" href="treehole.css">
+    <link rel="stylesheet" href="treehole-m.css">
+    <title>樹洞</title>
+</head>
+
+<body>
+    <div id="upside"></div>
+    <dialog id="infoShowDiary">
+        <h3>我的日記</h3>
+        <div class="infoTitle">
+            <div><img id="infoEmoji" src="./image/img-emoji/happiness.png"></div>
+            <div><img id="infoWeather" src="./image/img-weather/sun.png"></div>
+            <div><img src="image/date.png" alt=""></div>
+            <input id="infoDate" type="date">
+        </div>
+        <div class="infoContent">
+            <iframe id="infoIfream" src="https://www.youtube.com/embed/KIprTEhr9lE"></iframe>
+            <div class="ShowDiaryContent">
+                <input type="text" placeholder="標題(最多100字)" id="titleShowDiary">
+                <textarea placeholder="內容..." id="contentShowDiary" value="content"></textarea>
+            </div>
+        </div>
+        <button class="checklink" id="closeDialog">
+            <img src="image/pen.png" class="check">
+            <div class="checktext">
+                <p>關閉</p>
+            </div>
+        </button>
+    </dialog>
+</body>
+
+</html>

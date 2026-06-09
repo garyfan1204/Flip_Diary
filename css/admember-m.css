@@ -1,0 +1,28 @@
+@media screen and (min-width: 846px) {
+    #content :not(.page,input){
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    #content{
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .name,.sex,.account,.btns{
+        width: 25%;
+    }
+    
+    .btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}

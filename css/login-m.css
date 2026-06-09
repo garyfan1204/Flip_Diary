@@ -1,0 +1,17 @@
+@media screen and (max-width:845px){
+    .loginform{
+        scale: 0.7;
+    }
+    .registerform{
+        scale: 0.7;
+    }
+}
+
+@media screen and (max-width:470px){
+    .loginform{
+        scale: 0.6;
+    }
+    .registerform{
+        scale: 0.6;
+    }
+}

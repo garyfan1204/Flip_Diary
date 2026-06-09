@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/layout.js" defer></script>
+    <script src="javascript/diary.js"></script>
+    <title>日記</title>
+</head>
+
+<body>
+    <form class="formDiary" name="writeform" action="" method="" id="f1s">
+        <div id="fun">
+            <div id="current_date" class="date">
+                <img src="image/date.png" alt="">
+                <input type="date" name="date" id="date" class="datecontent">
+            </div>
+            <div class="feeling">
+                <div id="emotion" class="drop" onclick="toggleRotation('emotion')">
+                    <img src="./image/img-emoji/smile.png" alt="">
+                    <input id="emojiSelect" type="text" name="textbox" placeholder="請選擇表情" readonly>
+                    <div class="options">
+                        <div onclick="show('生氣')"><img src="./image/img-emoji/angry.png">生氣</div>
+                        <div onclick="show('平靜')"><img src="./image/img-emoji/calm.png">平靜</div>
+                        <div onclick="show('害怕')"><img src="./image/img-emoji/fear.png">害怕</div>
+                        <div onclick="show('幸福')"><img src="./image/img-emoji/happiness.png">幸福</div>
+                        <div onclick="show('喜悅')"><img src="./image/img-emoji/joy.png">喜悅</div>
+                        <div onclick="show('失落')"><img src="./image/img-emoji/sad.png">失落</div>
+                    </div>
+                </div>
+                <div id="weather" class="drop" onclick="toggleRotation('weather')">
+                    <img src="./image/img-weather/cloud.png" alt="">
+                    <input id="weatherSelect" type="text" name="textbox1" placeholder="請選擇天氣" readonly>
+                    <div class="options">
+                        <div onclick="showone('晴天')"><img src="./image/img-weather/sun.png">晴天</div>
+                        <div onclick="showone('雨天')"><img src="./image/img-weather/rain.png">雨天</div>
+                        <div onclick="showone('陰天')"><img src="./image/img-weather/cloudy.png">陰天</div>
+                        <div onclick="showone('晴時多雲')"><img src="./image/img-weather/partly.png">晴時多雲</div>
+                        <div onclick="showone('下雪')"><img src="./image/img-weather/snowy.png">下雪</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMusic" id="music">
+                <div>
+                    <div class="music brown"></div>
+                    <iframe id="musicShow" class="music white" width="260.48" height="183.94"
+                        src="" title="YouTube video player"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="song">
+                    <img src="./image/music.png" />
+                    <p id="songName">歌曲名稱</p>
+                </div>
+                <div id="singer">
+                    <img src="./image/person.png" />
+                    <p id="singerName">歌手名稱 </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="diary">
+            <input type="text" id="title" name="title" placeholder="標題(最多100字)" />
+            <textarea placeholder="內容..." id="content" name="content"></textarea>
+            <button type="submit" id="writeDiary" onclick="WriteDiary()">
+                <img src="image/pen.png" alt="">
+                <p>儲存</p>
+                <p id="diarymsg"></p>
+            </button>
+        </div>
+
+    </form>
+</body>
+
+</html>

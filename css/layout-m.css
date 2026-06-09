@@ -1,0 +1,112 @@
+@media screen and (min-width:846px) {
+    li a[href*= "login"]{
+        display: none;
+    }
+
+    header a[href*= "index"], a[href*= "userinfo"]{
+        display: none;
+    }
+}
+
+@media screen and (max-width:845px) {
+    main{
+        height: 70%;
+    }
+
+    #leftside{
+        width: 100%;
+        height: 15%;
+        padding: 0;
+        border-radius: 30px 30px 0 0;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+    }
+
+    #leftside :not(ul,ul *){
+        display: none;
+    }
+
+    .infolist{
+        width: 100%;
+        height: 90%;
+        padding: 0;
+        display: flex;
+    }
+
+    .infolist li{
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infolist a{
+        width: 90px;
+        height: 90px;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+    
+    .infolist img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #rightside{
+        width: 100%;
+    }
+
+    header{
+        width: calc(100% - 60px);
+        padding: 30px 30px 20px;
+        border-radius: 0 0 30px 30px;
+        justify-content: space-between;
+    }
+
+    header a[href*= "login"]{
+        display: none;
+    }
+
+    #logo{
+        width: 120px;
+        height: 60px;
+        margin: 0;
+    }
+    
+    #infoshot{
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .body{
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media screen and (max-width:470px) {
+    main{
+        height: 75%;
+    }
+    
+    #leftside{
+        height: 10%;
+    }
+        
+    .infolist a{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .infolist img {
+        width: 20px;
+        height: 20px;
+    }
+}

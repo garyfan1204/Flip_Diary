@@ -1,0 +1,103 @@
+@media screen and (min-width:846px) {
+    .checklink{
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .title{
+        top: 10px;
+        right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .diarys hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width:845px) {
+    main{
+        height: 70%;
+    }
+    
+    #upside{
+        padding: 0;
+    }
+   
+    #downside{
+        margin-bottom: calc(15% + 25px);
+    }
+   
+    .diarys{
+        width: 296px;
+        height: 176px;
+    }
+
+    .diarys >hr{
+        height: 80%;
+    }
+   
+    .diary-left{
+        width: 60%;
+        height: 100%;
+        position: relative;
+    }
+   
+    .checklink{
+        width: 30px;
+        border-radius: 50%;
+        top: 5px;
+        right: 10%;
+    }
+   
+    .checktext{
+        display: none;
+    }
+   
+    .title{
+        width: calc(80% - 20px);
+        height: calc(65% - 20px);
+        padding: 10px;
+        left: 10%;
+        bottom: 10px;
+    }
+   
+    .title p{
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+   
+    .diary-right{
+        width: 40%;
+        height: 100%;
+        position: relative;
+    }
+   
+    .diarys:nth-last-of-type(1),.diarys:nth-last-of-type(2),.diarys:nth-last-of-type(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width:470px) {
+    main{
+        height: 75%;
+    }
+    
+    .diarys:nth-last-of-type(4),.diarys:nth-last-of-type(5),.diarys:nth-last-of-type(6){
+        display: none;
+    }
+
+    .pages td:nth-of-type(2),.pages td:nth-last-of-type(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .pages td:nth-of-type(3),.pages td:nth-last-of-type(3){
+        display: none;
+    }
+}

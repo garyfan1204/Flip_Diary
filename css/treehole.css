@@ -1,0 +1,234 @@
+li a[href *="treehole"] {
+    background-color: #887a69;
+}
+
+#rightside {
+    height: auto;
+}
+
+main {
+    flex-direction: column;
+}
+
+#upside {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0 10%;
+}
+
+.diarys {
+    background-color: #887A69;
+    width: 276px;
+    height: 166px;
+    margin-top: 20px;
+    border: 2px solid #B7B7B7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #00000066;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+ 
+iframe {
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px;
+}
+
+dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: invert(20%);
+    background-color: #f7f0ddec;
+    color: #35322e;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+dialog h3{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: #71604A;
+    font-size: 2em;
+}
+
+input[type="date"]{
+    background-color: rgb(237, 227, 217);
+    border: none;
+    color: #555555;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 5px 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+}
+
+.infoTitle {
+    background-color: #887a69;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.infoTitle div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(86, 81, 76);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 100px;
+}
+.infoTitle img{
+    width: 50px;
+    height: 50px;
+}
+.infoContent {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 0  10px 10px;
+    background-color: rgb(237, 227, 217);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    font-size: 25px;
+}
+
+.ShowDiaryContent {
+    border-left: 1px solid #3f3f3f;
+    padding: 10px;
+}
+
+#titleShowDiary,
+#contentShowDiary {
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color: rgb(213, 201, 188);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6) inset;
+}
+
+#titleShowDiary{
+    height: 20%;
+    width: 90%;
+    margin-bottom: 5px;
+}
+#contentShowDiary{
+    height: 75%;
+    width: 90%;
+}
+
+.date {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 10%;
+}
+
+.title {
+    background-color: #F7F0DD;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.title p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.emoticon {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emoticon img {
+    margin: 5px;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+}
+
+.checklink {
+    background-color: #71604A;
+    color: #ffffff;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #00000055;
+    position: absolute;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+.checktext {
+    margin-left: 15px;
+}
+
+#downside {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pages {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.pages a {
+    color: #3f3f3f;
+    width: 38px;
+    height: 38px;
+    margin: 5px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.pages a:hover {
+    color: #fff;
+    background-color: #3f3f3f;
+}
+
+.pages div {
+    background-color: #F7F0DD;
+    color: #71604A;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

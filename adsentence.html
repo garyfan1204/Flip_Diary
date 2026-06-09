@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/DiaryLogo.ico">
+    <script src="javascript/adlayout.js"></script>
+    <title>名言佳句</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="search">
+            <input type="search" id="searchData">
+            <a href="#" id="searchBtn"><img src="image/search.png" alt="Search"></a>
+        </div>
+        <div class="title">
+            <div></div>
+            <h1>名言佳句</h1>
+        </div>
+        <div id="content">
+            <div id="overview">
+                <div id="add">新增佳句</div>
+                <div id="total">
+                    <div>名言佳句總數</div>
+                    <div id="sentence-total">123</div>
+                </div>
+            </div>
+            <dialog id="infoModalSentence">
+                <h3>新增佳句</h3>
+                <label>類別</label>
+                <select id="typeSentence">
+                    <option value="其他">其他</option>
+                    <option value="勵志">勵志</option>
+                </select><br>
+                <label>內容</label><input type="text" id="contentSentence"><br>
+                <button id="okSentence">確認</button>
+                <button id="closeSentence">關閉</button>
+            </dialog>
+            <!-- <select name="type" id="types">
+                <option value="all">全部類型</option>
+            </select> -->
+            <div class="sort">
+                <div class="type" onclick="sortTable(0)">類別</div>
+                <div class="content" onclick="sortTable(1)">內容</div>
+            </div>
+            <table id="items">
+                <!-- <tr>
+                    <td class="type">人生</td>
+                    <td class="content">Look before you leap.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">愛情</td>
+                    <td class="content">Faults are sick when love is thin.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">勵志</td>
+                    <td class="content">When Life Gives You Lemons, Make Lemonade.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">電影</td>
+                    <td class="content">Experience never goes out of fashion.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">人生</td>
+                    <td class="content">Rome was not built in a day.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">愛情</td>
+                    <td class="content">It's a good thing to like someone.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">勵志</td>
+                    <td class="content">No pain no gain</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">電影</td>
+                    <td class="content">Manners maketh man</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">人生</td>
+                    <td class="content">Great hopes make great men.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="type">勵志</td>
+                    <td class="content">It's up to you how far you'll go.</td>
+                    <td class="btns">
+                        <div>
+                            <input type="submit" value="刪除" class="delete">
+                            <input type="submit" value="修改" class="edit">
+                        </div>
+                    </td>
+                </tr> -->
+            </table>
+            <table class="pages" id="pages-sentence">
+                <!-- <tr>
+                    <td><a href="">&lt;&lt;</a></td>
+                    <td><a href="">1</a></td>
+                    <td><a href="">2</a></td>
+                    <td><a href="">3</a></td>
+                    <td><a href="">4</a></td>
+                    <td><a href="">5</a></td>
+                    <td><a href="">&gt;&gt;</a></td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

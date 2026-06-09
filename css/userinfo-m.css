@@ -1,0 +1,33 @@
+@media screen and (max-width:845px) {
+    #userlist, #changepwd, #selectgender{
+        padding: 20px;
+        padding-top: 60px;
+        justify-content: space-evenly;
+    }
+    
+    #account, #password, #gender, #email, #originpwd, #newpwd, #confirmpwd,input{
+        font-size: 2.6vw;
+        border-radius: 5px;
+        padding: 5%;
+    }
+
+    .usershot,#changeshot,#userimg{
+        width: 100px;
+        height: 100px;
+    }
+
+    #username{
+        font-size: 5vw;
+    }
+    
+    input[type = "submit"], [type = "reset"]{
+        width: 80px;
+        height: 35px;
+        border-radius: 5px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:470px) {
+    
+}
